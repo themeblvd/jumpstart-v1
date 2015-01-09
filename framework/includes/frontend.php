@@ -350,7 +350,7 @@ function themeblvd_nav_menu_start_el( $item_output, $item, $depth, $args ) {
 			$direction = 'right';
 		}
 
-		$indicator = sprintf( '<i class="sf-sub-indicator fa fa-caret-%s"></i></a>', $direction );
+		$indicator = sprintf( '<i class="sf-sub-indicator fa fa-caret-%s"></i>', $direction );
 		$indicator = apply_filters( 'themeblvd_menu_sub_indicator', $indicator, $depth );
 		$item_output = str_replace( '</a>', $indicator.'</a>', $item_output );
 	}
