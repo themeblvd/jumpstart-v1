@@ -5,6 +5,7 @@ Jump Start Changelog
 -----
 
 * Fixed duplicate closing `</a>` bug with dropdowns menus of main navigation.
+* Minor security fix.
 
 --------------------------------------------------------------
 
