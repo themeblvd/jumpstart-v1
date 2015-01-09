@@ -432,36 +432,13 @@ function themeblvd_blog_meta() {
 }
 
 /**
- * The meta info that generally displays with a blog
- * post after the post content.
+ * Displays the tags for a blog post.
  *
- * @since 2.5.0
- * @see themeblvd_blog_sub_meta_default()
+ * @since 2.0.0
+ * @see themeblvd_blog_tags_default()
  */
-function themeblvd_blog_sub_meta() {
-	do_action( 'themeblvd_blog_sub_meta' );
-}
-
-/**
- * The meta info that generally displays with a blog
- * post below the title.
- *
- * @since 2.5.0
- * @see themeblvd_grid_meta_default()
- */
-function themeblvd_grid_meta() {
-	do_action( 'themeblvd_grid_meta' );
-}
-
-/**
- * The meta info that generally displays with a post
- * in search results.
- *
- * @since 2.5.0
- * @see themeblvd_search_meta_default()
- */
-function themeblvd_search_meta() {
-	do_action( 'themeblvd_search_meta' );
+function themeblvd_blog_tags() {
+	do_action( 'themeblvd_blog_tags' );
 }
 
 /**
@@ -476,23 +453,8 @@ function themeblvd_search_meta() {
  * @param bool $link Set to false to force a thumbnail to ignore post's Image Link options
  * @param bool $allow_filters Whether to allow general filters on the thumbnail or not
  */
-function themeblvd_the_post_thumbnail( $size = '', $args = array() ) {
-
-	// Deal with backwards compat issues
-	// Deprecated declaration: themeblvd_the_post_thumbnail( $location = 'primary', $size = '' )
-	$new_args = array();
-
-	if ( $size == 'primary' || $size == 'single' ) {
-		$new_args['location'] = $size;
-	}
-	if ( $args && ! is_array($args) ) {
-		$size = $args;
-		$args = array();
-	}
-
-	$args = wp_parse_args( $args, $new_args );
-
-	do_action( 'themeblvd_the_post_thumbnail', $size, $args );
+function themeblvd_the_post_thumbnail( $location = 'primary', $size = '', $link = true, $allow_filters = true ) {
+	do_action( 'themeblvd_the_post_thumbnail', $location, $size, $link, $allow_filters );
 }
 
 /**

@@ -15,11 +15,9 @@
  * @package 	Theme Blvd WordPress Framework
  */
 
-		// End main area (if not a custom layout)
-		if ( ! themeblvd_config( 'builder_post_id' ) ) {
-			themeblvd_main_bottom();
-			themeblvd_main_end();
-		}
+		// End main area
+		themeblvd_main_bottom();
+		themeblvd_main_end();
 
 		// Featured area (below)
 		if ( themeblvd_config( 'featured_below' ) ) {
@@ -33,35 +31,21 @@
 
 		<!-- FOOTER (start) -->
 
-		<?php if ( themeblvd_config( 'bottom' ) ) : ?>
-
-			<?php if ( themeblvd_config( 'bottom_builder_post_id' ) ) : ?>
-
-				<div id="custom-bottom" class="clearfix" role="contentinfo">
-					<?php do_action( 'themeblvd_builder_content', 'footer' ); ?>
-				</div><!-- #custom-bottom (end) -->
-
-			<?php else : ?>
-
-				<div id="bottom">
-					<footer id="colophon" <?php themeblvd_footer_class(); ?> role="contentinfo">
-						<div class="wrap clearfix">
-							<?php
-							/**
-							 * Display footer elements.
-							 */
-							themeblvd_footer_above();
-							themeblvd_footer_content();
-							themeblvd_footer_sub_content();
-							themeblvd_footer_below();
-							?>
-						</div><!-- .wrap (end) -->
-					</footer><!-- #colophon (end) -->
-				</div><!-- #bottom (end) -->
-
-			<?php endif; ?>
-
-		<?php endif; ?>
+		<div id="bottom">
+			<footer id="colophon" role="contentinfo">
+				<div class="colophon-inner">
+					<?php
+					/**
+					 * Display footer elements.
+					 */
+					themeblvd_footer_above();
+					themeblvd_footer_content();
+					themeblvd_footer_sub_content();
+					themeblvd_footer_below();
+					?>
+				</div><!-- .content (end) -->
+			</footer><!-- #colophon (end) -->
+		</div><!-- #bottom (end) -->
 
 		<!-- FOOTER (end) -->
 

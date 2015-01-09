@@ -81,7 +81,7 @@ class Theme_Blvd_Envato_Updates {
 					return $updates;
 				}
 
-				if ( in_array( $theme->author_name, array($this->args['author_name'], 'Jason Bobich', 'Theme Blvd') ) ) {
+				if ( $theme->author_name == $this->args['author_name'] ) {
 					$purchased_themes[$theme->theme_name] = array(
 						'item_id' 		=> $theme->item_id,
 						'author_name' 	=> $theme->author_name,

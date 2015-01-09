@@ -1,8 +1,11 @@
 <?php
+if ( !function_exists( 'themeblvd_plugins' ) ) :
 /**
  * Run TGM class to tell users just installing
  * the current theme which plugins they should
- * be using.
+ * be using. However, if the user has already
+ * dismissed the message, we will not even include
+ * the class.
  *
  * remove_action( 'after_setup_theme', 'themeblvd_plugins' );
  *
@@ -10,18 +13,26 @@
  */
 function themeblvd_plugins() {
 
-	// Include files
-	include_once( TB_FRAMEWORK_DIRECTORY . '/admin/plugins/class-tb-plugin-management.php' );
-	include_once( TB_FRAMEWORK_DIRECTORY . '/admin/plugins/class-tgm-plugin-activation.php' );
+	/* @todo - Will evaluate whether to include this or
+	not later on. This will save resources, however will
+	also remove the "Recommended Plugins" menu item once
+	dismissing the prompt, which could be confusing.
 
-	// Setup plugin management
-	$manage = Theme_Blvd_Plugin_Management::get_instance();
+	// Check if the user has already dismissed the prompt
+	if ( get_user_meta( get_current_user_id(), 'tgmpa_dismissed_notice', true ) )
+		return;
+	*/
+
+	// Include TGM_Plugin_Activation class
+	include_once( TB_FRAMEWORK_DIRECTORY . '/admin/plugins/class-tgm-plugin-activation.php' );
 
 	// Hook in TGM Class registration
 	add_action( 'tgmpa_register', 'themeblvd_tgm_register' );
 
 }
+endif;
 
+if ( !function_exists( 'themeblvd_tgm_register' ) ) :
 /**
  * Register the required/recommnended plugins.
  *
@@ -40,13 +51,11 @@ function themeblvd_tgm_register() {
 			'slug'		=> 'theme-blvd-layout-builder',
 			'required'	=> false
 		),
-		/* Not a default recommended plugin as of v2.5
 		'sliders' => array(
 			'name'		=> 'Theme Blvd Sliders',
 			'slug'		=> 'theme-blvd-sliders',
 			'required'	=> false
 		),
-		*/
 		'sidebars' => array(
 			'name'		=> 'Theme Blvd Widget Areas',
 			'slug'		=> 'theme-blvd-widget-areas',
@@ -60,11 +69,6 @@ function themeblvd_tgm_register() {
 		'shortcodes' => array(
 			'name'		=> 'Theme Blvd Shortcodes',
 			'slug'		=> 'theme-blvd-shortcodes',
-			'required'	=> false
-		),
-		'portfolios' => array(
-			'name'		=> 'Portfolios',
-			'slug'		=> 'portfolios',
 			'required'	=> false
 		)
 	);
@@ -105,3 +109,4 @@ function themeblvd_tgm_register() {
 	tgmpa( $plugins, $config );
 
 }
+endif;

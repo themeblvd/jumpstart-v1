@@ -22,10 +22,12 @@ get_header();
 		<div class="sidebar_layout-inner">
 			<div class="row grid-protection">
 
+				<?php get_sidebar( 'left' ); ?>
+
 				<!-- CONTENT (start) -->
 
 				<div id="content" class="<?php echo themeblvd_get_column_class('content'); ?> clearfix" role="main">
-					<div class="inner  sitemap-template-archives">
+					<div class="inner">
 						<?php themeblvd_content_top(); ?>
 
 						<?php get_template_part( 'content', 'template_archives' ); ?>
@@ -40,13 +42,7 @@ get_header();
 
 				<!-- CONTENT (end) -->
 
-				<!-- SIDEBARS (start) -->
-
-				<?php get_sidebar( 'left' ); ?>
-
 				<?php get_sidebar( 'right' ); ?>
-
-				<!-- SIDEBARS (end) -->
 
 			</div><!-- .grid-protection (end) -->
 		</div><!-- .sidebar_layout-inner (end) -->
