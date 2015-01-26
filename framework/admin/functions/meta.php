@@ -45,7 +45,7 @@ function setup_themeblvd_page_meta() {
 			'tb_title' => array(
 				'id'		=> '_tb_title',
 				'name' 		=> __( 'Page Title', 'themeblvd' ),
-				'desc'		=> __( 'This option will be ignored if you\'re using this page with a custom layout built with the <a href="admin.php?page=builder_blvd">Layout Builder</a>.', 'themeblvd' ),
+				'desc'		=> sprintf(__( 'This option will be ignored if you\'re using this page with a custom layout built with the %s.', 'themeblvd' ), '<a href="admin.php?page=themeblvd_builder">'.__('Layout Builder', 'themeblvd').'</a>' ),
 				'type' 		=> 'select',
 				'options'	=> array(
 					'show' => __( 'Show page\'s title.', 'themeblvd' ),
