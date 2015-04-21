@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Jump Start\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-22 10:04-1000\n"
-"PO-Revision-Date: 2014-03-22 10:04-1000\n"
+"POT-Creation-Date: 2015-04-21 12:04-1000\n"
+"PO-Revision-Date: 2015-04-21 12:05-1000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -278,11 +278,11 @@ msgstr ""
 msgid "Changelog"
 msgstr ""
 
-#: ../framework/admin/functions/general.php:133
+#: ../framework/admin/functions/general.php:129
 msgid "Page Attributes"
 msgstr ""
 
-#: ../framework/admin/functions/general.php:222
+#: ../framework/admin/functions/general.php:188
 msgid "Options cleared from database."
 msgstr ""
 
@@ -331,7 +331,12 @@ msgid "Page Title"
 msgstr ""
 
 #: ../framework/admin/functions/meta.php:48
-msgid "This option will be ignored if you're using this page with a custom layout built with the <a href=\"admin.php?page=builder_blvd\">Layout Builder</a>."
+#, php-format
+msgid "This option will be ignored if you're using this page with a custom layout built with the %s."
+msgstr ""
+
+#: ../framework/admin/functions/meta.php:48
+msgid "Layout Builder"
 msgstr ""
 
 #: ../framework/admin/functions/meta.php:51
@@ -703,197 +708,197 @@ msgstr ""
 msgid "Enter the name of a font from the <a href=\"http://www.google.com/webfonts\" target=\"_blank\">Google Font Directory</a>."
 msgstr ""
 
-#: ../framework/admin/plugins/class-tgm-plugin-activation.php:161
+#: ../framework/admin/plugins/class-tgm-plugin-activation.php:164
 msgid "Install Required Plugins"
 msgstr ""
 
-#: ../framework/admin/plugins/class-tgm-plugin-activation.php:162
+#: ../framework/admin/plugins/class-tgm-plugin-activation.php:165
 msgid "Install Plugins"
 msgstr ""
 
-#: ../framework/admin/plugins/class-tgm-plugin-activation.php:163
+#: ../framework/admin/plugins/class-tgm-plugin-activation.php:166
 #: ../framework/admin/plugins/plugins.php:89
 #, php-format
 msgid "Installing Plugin: %s"
 msgstr ""
 
-#: ../framework/admin/plugins/class-tgm-plugin-activation.php:164
+#: ../framework/admin/plugins/class-tgm-plugin-activation.php:167
 msgid "Something went wrong."
 msgstr ""
 
-#: ../framework/admin/plugins/class-tgm-plugin-activation.php:175
+#: ../framework/admin/plugins/class-tgm-plugin-activation.php:178
 #: ../framework/admin/plugins/plugins.php:101
 msgid "Return to Required Plugins Installer"
 msgstr ""
 
-#: ../framework/admin/plugins/class-tgm-plugin-activation.php:176
+#: ../framework/admin/plugins/class-tgm-plugin-activation.php:179
 msgid "Return to the dashboard"
 msgstr ""
 
-#: ../framework/admin/plugins/class-tgm-plugin-activation.php:177
-#: ../framework/admin/plugins/class-tgm-plugin-activation.php:1951
+#: ../framework/admin/plugins/class-tgm-plugin-activation.php:180
+#: ../framework/admin/plugins/class-tgm-plugin-activation.php:1958
 #: ../framework/admin/plugins/plugins.php:102
 msgid "Plugin activated successfully."
 msgstr ""
 
-#: ../framework/admin/plugins/class-tgm-plugin-activation.php:178
+#: ../framework/admin/plugins/class-tgm-plugin-activation.php:181
 msgid "The following plugin was activated successfully:"
 msgstr ""
 
-#: ../framework/admin/plugins/class-tgm-plugin-activation.php:179
+#: ../framework/admin/plugins/class-tgm-plugin-activation.php:182
 #, php-format
 msgid "All plugins installed and activated successfully. %1$s"
 msgstr ""
 
-#: ../framework/admin/plugins/class-tgm-plugin-activation.php:180
+#: ../framework/admin/plugins/class-tgm-plugin-activation.php:183
 msgid "Dismiss this notice"
 msgstr ""
 
-#: ../framework/admin/plugins/class-tgm-plugin-activation.php:534
-#: ../framework/admin/plugins/class-tgm-plugin-activation.php:2168
+#: ../framework/admin/plugins/class-tgm-plugin-activation.php:536
+#: ../framework/admin/plugins/class-tgm-plugin-activation.php:2175
 msgid "Return to the Dashboard"
 msgstr ""
 
-#: ../framework/admin/plugins/class-tgm-plugin-activation.php:1175
+#: ../framework/admin/plugins/class-tgm-plugin-activation.php:1177
 msgid "Private Repository"
 msgstr ""
 
-#: ../framework/admin/plugins/class-tgm-plugin-activation.php:1178
+#: ../framework/admin/plugins/class-tgm-plugin-activation.php:1180
 msgid "Pre-Packaged"
 msgstr ""
 
-#: ../framework/admin/plugins/class-tgm-plugin-activation.php:1183
+#: ../framework/admin/plugins/class-tgm-plugin-activation.php:1185
 msgid "WordPress Repository"
 msgstr ""
 
-#: ../framework/admin/plugins/class-tgm-plugin-activation.php:1186
+#: ../framework/admin/plugins/class-tgm-plugin-activation.php:1188
 msgid "Required"
 msgstr ""
 
-#: ../framework/admin/plugins/class-tgm-plugin-activation.php:1186
+#: ../framework/admin/plugins/class-tgm-plugin-activation.php:1188
 msgid "Recommended"
 msgstr ""
 
-#: ../framework/admin/plugins/class-tgm-plugin-activation.php:1189
+#: ../framework/admin/plugins/class-tgm-plugin-activation.php:1191
 msgid "Not Installed"
 msgstr ""
 
-#: ../framework/admin/plugins/class-tgm-plugin-activation.php:1191
+#: ../framework/admin/plugins/class-tgm-plugin-activation.php:1193
 msgid "Installed But Not Activated"
 msgstr ""
 
-#: ../framework/admin/plugins/class-tgm-plugin-activation.php:1296
-#: ../framework/admin/plugins/class-tgm-plugin-activation.php:1404
+#: ../framework/admin/plugins/class-tgm-plugin-activation.php:1298
+#: ../framework/admin/plugins/class-tgm-plugin-activation.php:1414
 msgid "Install"
 msgstr ""
 
-#: ../framework/admin/plugins/class-tgm-plugin-activation.php:1318
-#: ../framework/admin/plugins/class-tgm-plugin-activation.php:1405
+#: ../framework/admin/plugins/class-tgm-plugin-activation.php:1322
+#: ../framework/admin/plugins/class-tgm-plugin-activation.php:1415
 msgid "Activate"
 msgstr ""
 
-#: ../framework/admin/plugins/class-tgm-plugin-activation.php:1367
+#: ../framework/admin/plugins/class-tgm-plugin-activation.php:1377
 #, php-format
 msgid "No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the Dashboard\">Return to the Dashboard</a>"
 msgstr ""
 
-#: ../framework/admin/plugins/class-tgm-plugin-activation.php:1383
+#: ../framework/admin/plugins/class-tgm-plugin-activation.php:1393
 msgid "Plugin"
 msgstr ""
 
-#: ../framework/admin/plugins/class-tgm-plugin-activation.php:1384
+#: ../framework/admin/plugins/class-tgm-plugin-activation.php:1394
 msgid "Source"
 msgstr ""
 
-#: ../framework/admin/plugins/class-tgm-plugin-activation.php:1385
+#: ../framework/admin/plugins/class-tgm-plugin-activation.php:1395
 msgid "Type"
 msgstr ""
 
-#: ../framework/admin/plugins/class-tgm-plugin-activation.php:1386
+#: ../framework/admin/plugins/class-tgm-plugin-activation.php:1396
 msgid "Status"
 msgstr ""
 
-#: ../framework/admin/plugins/class-tgm-plugin-activation.php:1934
+#: ../framework/admin/plugins/class-tgm-plugin-activation.php:1941
 msgid "Install package not available."
 msgstr ""
 
-#: ../framework/admin/plugins/class-tgm-plugin-activation.php:1935
+#: ../framework/admin/plugins/class-tgm-plugin-activation.php:1942
 #, php-format
 msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
 msgstr ""
 
-#: ../framework/admin/plugins/class-tgm-plugin-activation.php:1936
+#: ../framework/admin/plugins/class-tgm-plugin-activation.php:1943
 msgid "Unpacking the package&#8230;"
 msgstr ""
 
-#: ../framework/admin/plugins/class-tgm-plugin-activation.php:1937
+#: ../framework/admin/plugins/class-tgm-plugin-activation.php:1944
 msgid "Installing the plugin&#8230;"
 msgstr ""
 
-#: ../framework/admin/plugins/class-tgm-plugin-activation.php:1938
+#: ../framework/admin/plugins/class-tgm-plugin-activation.php:1945
 msgid "Plugin install failed."
 msgstr ""
 
-#: ../framework/admin/plugins/class-tgm-plugin-activation.php:1939
+#: ../framework/admin/plugins/class-tgm-plugin-activation.php:1946
 msgid "Plugin installed successfully."
 msgstr ""
 
-#: ../framework/admin/plugins/class-tgm-plugin-activation.php:1950
+#: ../framework/admin/plugins/class-tgm-plugin-activation.php:1957
 msgid "Plugin activation failed."
 msgstr ""
 
-#: ../framework/admin/plugins/class-tgm-plugin-activation.php:2064
-msgid "The installation and activation process is starting. This process may take a while on some hosts, so please be patient."
-msgstr ""
-
-#: ../framework/admin/plugins/class-tgm-plugin-activation.php:2065
-#, php-format
-msgid "%1$s installed and activated successfully."
-msgstr ""
-
-#: ../framework/admin/plugins/class-tgm-plugin-activation.php:2065
-#: ../framework/admin/plugins/class-tgm-plugin-activation.php:2074
-msgid "Show Details"
-msgstr ""
-
-#: ../framework/admin/plugins/class-tgm-plugin-activation.php:2065
-#: ../framework/admin/plugins/class-tgm-plugin-activation.php:2074
-msgid "Hide Details"
-msgstr ""
-
-#: ../framework/admin/plugins/class-tgm-plugin-activation.php:2066
-msgid "All installations and activations have been completed."
-msgstr ""
-
-#: ../framework/admin/plugins/class-tgm-plugin-activation.php:2067
-#, php-format
-msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
-msgstr ""
-
 #: ../framework/admin/plugins/class-tgm-plugin-activation.php:2071
-msgid "The installation process is starting. This process may take a while on some hosts, so please be patient."
+msgid "The installation and activation process is starting. This process may take a while on some hosts, so please be patient."
 msgstr ""
 
 #: ../framework/admin/plugins/class-tgm-plugin-activation.php:2072
 #, php-format
-msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: ../framework/admin/plugins/class-tgm-plugin-activation.php:2072
+#: ../framework/admin/plugins/class-tgm-plugin-activation.php:2081
+msgid "Show Details"
+msgstr ""
+
+#: ../framework/admin/plugins/class-tgm-plugin-activation.php:2072
+#: ../framework/admin/plugins/class-tgm-plugin-activation.php:2081
+msgid "Hide Details"
 msgstr ""
 
 #: ../framework/admin/plugins/class-tgm-plugin-activation.php:2073
-#, php-format
-msgid "The installation of %1$s failed."
+msgid "All installations and activations have been completed."
 msgstr ""
 
 #: ../framework/admin/plugins/class-tgm-plugin-activation.php:2074
 #, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../framework/admin/plugins/class-tgm-plugin-activation.php:2078
+msgid "The installation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr ""
+
+#: ../framework/admin/plugins/class-tgm-plugin-activation.php:2079
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: ../framework/admin/plugins/class-tgm-plugin-activation.php:2080
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: ../framework/admin/plugins/class-tgm-plugin-activation.php:2081
+#, php-format
 msgid "%1$s installed successfully."
 msgstr ""
 
-#: ../framework/admin/plugins/class-tgm-plugin-activation.php:2075
+#: ../framework/admin/plugins/class-tgm-plugin-activation.php:2082
 msgid "All installations have been completed."
 msgstr ""
 
-#: ../framework/admin/plugins/class-tgm-plugin-activation.php:2076
+#: ../framework/admin/plugins/class-tgm-plugin-activation.php:2083
 #, php-format
 msgid "Installing Plugin %1$s (%2$d/%3$d)"
 msgstr ""
@@ -1358,7 +1363,7 @@ msgid "Google Font Name"
 msgstr ""
 
 #: ../framework/api/customizer.php:416
-#: ../framework/includes/general.php:1524
+#: ../framework/includes/general.php:1445
 msgid "Homepage"
 msgstr ""
 
@@ -1405,7 +1410,7 @@ msgstr ""
 msgid "Hook your custom head functionality to wp_head."
 msgstr ""
 
-#: ../framework/includes/elements.php:1246
+#: ../framework/includes/elements.php:1263
 #: ../framework/includes/parts.php:384
 #: ../framework/includes/parts.php:399
 msgid "Twitter functionality is no longer built into the Theme Blvd framework. Use Theme Blvd \"Tweeple\" plugin found in the WordPress plugin repository."
@@ -1436,10 +1441,6 @@ msgstr ""
 
 #: ../framework/includes/general.php:428
 msgid "Sliders"
-msgstr ""
-
-#: ../framework/includes/general.php:442
-msgid "Layout Builder"
 msgstr ""
 
 #: ../framework/includes/general.php:456
@@ -1782,129 +1783,129 @@ msgstr ""
 msgid "White"
 msgstr ""
 
-#: ../framework/includes/general.php:1183
+#: ../framework/includes/general.php:1104
 msgid "TB Large"
 msgstr ""
 
-#: ../framework/includes/general.php:1189
+#: ../framework/includes/general.php:1110
 msgid "TB Medium"
 msgstr ""
 
-#: ../framework/includes/general.php:1195
+#: ../framework/includes/general.php:1116
 msgid "TB Small"
 msgstr ""
 
-#: ../framework/includes/general.php:1201
+#: ../framework/includes/general.php:1122
 msgid "Small Square"
 msgstr ""
 
-#: ../framework/includes/general.php:1207
+#: ../framework/includes/general.php:1128
 msgid "Smaller Square"
 msgstr ""
 
-#: ../framework/includes/general.php:1213
+#: ../framework/includes/general.php:1134
 msgid "Smallest Square"
 msgstr ""
 
-#: ../framework/includes/general.php:1219
+#: ../framework/includes/general.php:1140
 msgid "Slider Full Width"
 msgstr ""
 
-#: ../framework/includes/general.php:1225
+#: ../framework/includes/general.php:1146
 msgid "Slider Staged"
 msgstr ""
 
-#: ../framework/includes/general.php:1231
+#: ../framework/includes/general.php:1152
 msgid "1/5 Column of Grid"
 msgstr ""
 
-#: ../framework/includes/general.php:1237
+#: ../framework/includes/general.php:1158
 msgid "1/4 Column of Grid"
 msgstr ""
 
-#: ../framework/includes/general.php:1243
+#: ../framework/includes/general.php:1164
 msgid "1/3 Column of Grid"
 msgstr ""
 
-#: ../framework/includes/general.php:1249
+#: ../framework/includes/general.php:1170
 msgid "1/2 Column of Grid"
 msgstr ""
 
-#: ../framework/includes/general.php:1497
+#: ../framework/includes/general.php:1418
 #: ../framework/includes/locals.php:54
 msgid "Pages"
 msgstr ""
 
-#: ../framework/includes/general.php:1498
+#: ../framework/includes/general.php:1419
 msgid "No pages to display."
 msgstr ""
 
-#: ../framework/includes/general.php:1502
+#: ../framework/includes/general.php:1423
 msgid "Posts"
 msgstr ""
 
-#: ../framework/includes/general.php:1503
+#: ../framework/includes/general.php:1424
 msgid "No posts to display."
 msgstr ""
 
-#: ../framework/includes/general.php:1507
+#: ../framework/includes/general.php:1428
 msgid "Posts in Category"
 msgstr ""
 
-#: ../framework/includes/general.php:1508
-#: ../framework/includes/general.php:1513
+#: ../framework/includes/general.php:1429
+#: ../framework/includes/general.php:1434
 msgid "No categories to display."
 msgstr ""
 
-#: ../framework/includes/general.php:1512
+#: ../framework/includes/general.php:1433
 msgid "Category Archives"
 msgstr ""
 
-#: ../framework/includes/general.php:1517
+#: ../framework/includes/general.php:1438
 msgid "Tag Archives"
 msgstr ""
 
-#: ../framework/includes/general.php:1518
+#: ../framework/includes/general.php:1439
 msgid "No tags to display."
 msgstr ""
 
-#: ../framework/includes/general.php:1522
+#: ../framework/includes/general.php:1443
 msgid "Hierarchy"
 msgstr ""
 
-#: ../framework/includes/general.php:1525
+#: ../framework/includes/general.php:1446
 msgid "All Posts"
 msgstr ""
 
-#: ../framework/includes/general.php:1526
+#: ../framework/includes/general.php:1447
 msgid "All Pages"
 msgstr ""
 
-#: ../framework/includes/general.php:1527
+#: ../framework/includes/general.php:1448
 msgid "All Archives"
 msgstr ""
 
-#: ../framework/includes/general.php:1528
+#: ../framework/includes/general.php:1449
 msgid "All Category Archives"
 msgstr ""
 
-#: ../framework/includes/general.php:1529
+#: ../framework/includes/general.php:1450
 msgid "All Tag Archives"
 msgstr ""
 
-#: ../framework/includes/general.php:1530
+#: ../framework/includes/general.php:1451
 msgid "All Author Archives"
 msgstr ""
 
-#: ../framework/includes/general.php:1531
+#: ../framework/includes/general.php:1452
 msgid "Search Results"
 msgstr ""
 
-#: ../framework/includes/general.php:1532
+#: ../framework/includes/general.php:1453
 msgid "404 Page"
 msgstr ""
 
-#: ../framework/includes/general.php:1537
+#: ../framework/includes/general.php:1458
 msgid "Custom"
 msgstr ""
 
@@ -2149,7 +2150,7 @@ msgstr ""
 msgid "Website"
 msgstr ""
 
-#: ../framework/includes/media.php:357
+#: ../framework/includes/media.php:361
 msgid "Oops! Couldn't find a gallery with one or more image attachments. Make sure to insert a gallery into the body of the post or attach some images to the post."
 msgstr ""
 
