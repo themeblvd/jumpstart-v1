@@ -206,12 +206,12 @@ function themeblvd_get_posts_args( $options, $type, $slider = false ) {
 					// Category override option #1 -- cat
 					$query['cat'] = $options['cat'];
 
-				} elseif ( ! empty( $options['category_name'] ) ) {
+				} else if ( ! empty( $options['category_name'] ) ) {
 
 					// Category override option #2 -- category_name
 					$query['category_name'] = $options['category_name'];
 
-				} elseif ( ! empty( $options['categories'] ) && ! $options['categories']['all'] ) {
+				} else if ( ! empty( $options['categories'] ) && ( is_string( $options['categories'] ) || empty( $options['categories']['all'] ) ) ) {
 
 					unset( $options['categories']['all'] );
 					$categories = '';
