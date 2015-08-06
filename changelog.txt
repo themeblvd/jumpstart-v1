@@ -1,10 +1,11 @@
 Jump Start Changelog
 ====================
 
-1.2.8 - XX/XX/XXXX
+1.2.8 - 08/06/2015
 ------------------
 
-* Fixed minor PHP warnings.
+* Fixed: Minor PHP warnings around retrieving posts by category from shortcodes.
+* Fixed: Minor admin compatibility issue with WPML 3.2 update.
 
 --------------------------------------------------------------
 

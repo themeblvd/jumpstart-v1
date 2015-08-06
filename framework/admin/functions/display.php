@@ -680,8 +680,8 @@ function themeblvd_conditionals_option( $id, $name, $val = null ) {
 	// WPML compat
 	if ( isset( $GLOBALS['sitepress'] ) ) {
 		remove_filter( 'get_pages', array( $GLOBALS['sitepress'], 'exclude_other_language_pages2' ) );
-		remove_filter( 'get_terms_args', array( $GLOBALS['sitepress'], 'get_terms_args_filter' ) );
-		remove_filter( 'terms_clauses', array( $GLOBALS['sitepress'], 'terms_clauses' ) );
+		remove_filter( 'get_terms_args', array( $GLOBALS['sitepress'], 'get_terms_args_filter' ), 10, 2 );
+		remove_filter( 'terms_clauses', array( $GLOBALS['sitepress'], 'terms_clauses' ), 10, 4 );
 	}
 
 	// Start output
