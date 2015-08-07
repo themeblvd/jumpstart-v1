@@ -4,6 +4,8 @@ Jump Start Changelog
 1.2.9 - 08/07/2015
 ------------------
 
+* Fixed: Some of the new FontAwesome files were dropped from the last update.
+
 --------------------------------------------------------------
 
 1.2.8 - 08/06/2015
