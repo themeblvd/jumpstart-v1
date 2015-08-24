@@ -394,7 +394,7 @@ function themeblvd_customizer_init( $wp_customize ) {
 	}
 
 	// Remove irrelevant sections
-	$remove_sections = apply_filters( 'themeblvd_customizer_remove_sections', array( 'title_tagline' ) );
+	$remove_sections = apply_filters( 'themeblvd_customizer_remove_sections', array() );
 	if ( is_array( $remove_sections ) && $remove_sections ) {
 		foreach ( $remove_sections as $section ) {
 			$wp_customize->remove_section( $section );
