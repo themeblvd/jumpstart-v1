@@ -366,7 +366,7 @@ function themeblvd_sanitize_tabs( $input ) {
 	}
 
 	// Verify nav
-	if ( in_array( $input['nav'], array( 'tabs_above', 'tabs_right', 'tabs_below', 'tabs_left', 'pills_above', 'pills_below' ) ) ) {
+	if ( in_array( $input['nav'], array( 'tabs', 'pills', 'tabs_above', 'tabs_right', 'tabs_below', 'tabs_left', 'pills_above', 'pills_below' ) ) ) {
 		$output['nav'] = $input['nav'];
 	}
 

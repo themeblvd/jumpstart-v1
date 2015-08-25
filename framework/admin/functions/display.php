@@ -376,12 +376,8 @@ function themeblvd_tabs_option( $id, $name, $val ) {
 	$current_value = ! empty( $val ) && ! empty( $val['nav'] ) ? $val['nav'] : null;
 	$select_nav  = '<div class="tb-fancy-select">';
 	$select_nav .= '<select class="tabs-nav" name="'.esc_attr( $name.'['.$id.'][nav]' ).'">';
-	$select_nav .= '<option value="tabs_above" '.selected( $current_value, 'tabs_above', false ).'>'.__( 'Tabs on Top', 'themeblvd' ).'</option>';
-	$select_nav .= '<option value="tabs_right" '.selected( $current_value, 'tabs_right', false ).'>'.__( 'Tabs on Right', 'themeblvd' ).'</option>';
-	$select_nav .= '<option value="tabs_below" '.selected( $current_value, 'tabs_below', false ).'>'.__( 'Tabs on Bottom', 'themeblvd' ).'</option>';
-	$select_nav .= '<option value="tabs_left" '.selected( $current_value, 'tabs_left', false ).'>'.__( 'Tabs on Left', 'themeblvd' ).'</option>';
-	$select_nav .= '<option value="pills_above" '.selected( $current_value, 'pills_above', false ).'>'.__( 'Pills on Top', 'themeblvd' ).'</option>';
-	$select_nav .= '<option value="pills_below" '.selected( $current_value, 'pills_below', false ).'>'.__( 'Pills on Bottom', 'themeblvd' ).'</option>';
+	$select_nav .= '<option value="tabs_above" '.selected( $current_value, 'tabs_above', false ).'>'.__( 'Tabs', 'themeblvd' ).'</option>';
+	$select_nav .= '<option value="pills_above" '.selected( $current_value, 'pills_above', false ).'>'.__( 'Pills', 'themeblvd' ).'</option>';
 	$select_nav .= '</select>';
 	$select_nav .= '<span class="trigger"></span>';
 	$select_nav .= '<span class="textbox"></span>';
