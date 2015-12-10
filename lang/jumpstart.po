@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Jump Start\n"
+"Project-Id-Version: Jump Start 1.2.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-21 12:04-1000\n"
-"PO-Revision-Date: 2015-04-21 12:05-1000\n"
+"POT-Creation-Date: 2015-12-10 13:15-1000\n"
+"PO-Revision-Date: 2015-12-10 13:15-1000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-KeywordsList: __;_e;_n;_n_noop\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SearchPath-0: ..\n"
 
@@ -24,6 +24,10 @@ msgstr ""
 
 #: ../framework/admin/functions/display.php:42
 msgid "Apply"
+msgstr ""
+
+#: ../framework/admin/functions/display.php:45
+msgid "1 "
 msgstr ""
 
 #: ../framework/admin/functions/display.php:71
@@ -69,6 +73,7 @@ msgstr ""
 #: ../framework/admin/functions/display.php:335
 #: ../framework/admin/functions/display.php:339
 #: ../framework/admin/functions/display.php:343
+#: ../framework/admin/functions/display.php:379
 msgid "Tabs"
 msgstr ""
 
@@ -80,201 +85,181 @@ msgstr ""
 msgid "Framed Style"
 msgstr ""
 
-#: ../framework/admin/functions/display.php:379
-msgid "Tabs on Top"
-msgstr ""
-
 #: ../framework/admin/functions/display.php:380
-msgid "Tabs on Right"
+msgid "Pills"
 msgstr ""
 
-#: ../framework/admin/functions/display.php:381
-msgid "Tabs on Bottom"
-msgstr ""
-
-#: ../framework/admin/functions/display.php:382
-msgid "Tabs on Left"
-msgstr ""
-
-#: ../framework/admin/functions/display.php:383
-msgid "Pills on Top"
-msgstr ""
-
-#: ../framework/admin/functions/display.php:384
-msgid "Pills on Bottom"
-msgstr ""
-
-#: ../framework/admin/functions/display.php:402
+#: ../framework/admin/functions/display.php:398
 #, php-format
 msgid "Tab #%d Name"
 msgstr ""
 
-#: ../framework/admin/functions/display.php:454
+#: ../framework/admin/functions/display.php:450
 msgid "- Select Content Type -"
 msgstr ""
 
-#: ../framework/admin/functions/display.php:458
+#: ../framework/admin/functions/display.php:454
 msgid "Floating Widget Area"
 msgstr ""
 
-#: ../framework/admin/functions/display.php:462
+#: ../framework/admin/functions/display.php:458
 msgid "Content of Current Page"
 msgstr ""
 
-#: ../framework/admin/functions/display.php:466
+#: ../framework/admin/functions/display.php:462
 msgid "Content of External Page"
 msgstr ""
 
-#: ../framework/admin/functions/display.php:470
+#: ../framework/admin/functions/display.php:466
 msgid "Raw Content"
 msgstr ""
 
-#: ../framework/admin/functions/display.php:501
+#: ../framework/admin/functions/display.php:497
 #, php-format
 msgid "In order for you to use this feature you need to have the %s plugin activated."
 msgstr ""
 
-#: ../framework/admin/functions/display.php:525
+#: ../framework/admin/functions/display.php:521
 msgid "You haven't created any floating widget areas."
 msgstr ""
 
-#: ../framework/admin/functions/display.php:558
+#: ../framework/admin/functions/display.php:554
 msgid "You haven't created any pages."
 msgstr ""
 
-#: ../framework/admin/functions/display.php:587
+#: ../framework/admin/functions/display.php:583
 msgid "Apply WordPress automatic formatting."
 msgstr ""
 
-#: ../framework/admin/functions/display.php:600
+#: ../framework/admin/functions/display.php:596
 msgid "Select from your floating custom widget areas. In order for a custom widget area to be \"floating\" you must have it configured this way in the Widget Area manager."
 msgstr ""
 
-#: ../framework/admin/functions/display.php:607
+#: ../framework/admin/functions/display.php:603
 msgid "Select an external page to pull content from."
 msgstr ""
 
-#: ../framework/admin/functions/display.php:614
+#: ../framework/admin/functions/display.php:610
 msgid "You can use basic HTML here, and most shortcodes."
 msgstr ""
 
-#: ../framework/admin/functions/display.php:729
+#: ../framework/admin/functions/display.php:725
 msgid "Enter in a comma-separated list of the post slugs you'd like to add to the assignments."
 msgstr ""
 
-#: ../framework/admin/functions/display.php:730
+#: ../framework/admin/functions/display.php:726
 msgid "Example: post-1, post-2, post-3"
 msgstr ""
 
-#: ../framework/admin/functions/display.php:731
+#: ../framework/admin/functions/display.php:727
 msgid "Note: Any post slugs entered that don't exist won't be saved."
 msgstr ""
 
-#: ../framework/admin/functions/display.php:789
+#: ../framework/admin/functions/display.php:785
 msgid "Enter in a comma-separated list of the tags you'd like to add to the assignments."
 msgstr ""
 
-#: ../framework/admin/functions/display.php:790
+#: ../framework/admin/functions/display.php:786
 msgid "Example: tag-1, tag-2, tag-3"
 msgstr ""
 
-#: ../framework/admin/functions/display.php:791
+#: ../framework/admin/functions/display.php:787
 msgid "Note: Any tags entered that don't exist won't be saved."
 msgstr ""
 
-#: ../framework/admin/functions/display.php:822
+#: ../framework/admin/functions/display.php:818
 msgid "Enter in a custom <a href=\"http://codex.wordpress.org/Conditional_Tags\" target=\"_blank\">conditional statement</a>."
 msgstr ""
 
-#: ../framework/admin/functions/display.php:823
+#: ../framework/admin/functions/display.php:819
 msgid "Examples:"
 msgstr ""
 
-#: ../framework/admin/functions/display.php:824
+#: ../framework/admin/functions/display.php:820
 msgid "Warning: Make sure you know what you're doing here. If you enter invalid conditional functions, you will most likely get PHP errors on the frontend of your website."
 msgstr ""
 
-#: ../framework/admin/functions/display.php:866
+#: ../framework/admin/functions/display.php:862
 msgid "Site Title"
 msgstr ""
 
-#: ../framework/admin/functions/display.php:867
+#: ../framework/admin/functions/display.php:863
 msgid "Site Title + Tagline"
 msgstr ""
 
-#: ../framework/admin/functions/display.php:868
+#: ../framework/admin/functions/display.php:864
 msgid "Custom Text"
 msgstr ""
 
-#: ../framework/admin/functions/display.php:869
+#: ../framework/admin/functions/display.php:865
 msgid "Image"
 msgstr ""
 
-#: ../framework/admin/functions/display.php:894
-#: ../framework/admin/functions/display.php:904
+#: ../framework/admin/functions/display.php:890
+#: ../framework/admin/functions/display.php:900
 msgid "Current Site Title"
 msgstr ""
 
-#: ../framework/admin/functions/display.php:896
+#: ../framework/admin/functions/display.php:892
 msgid "You can change your site title and tagline by going <a href=\"options-general.php\" target=\"_blank\">here</a>."
 msgstr ""
 
-#: ../framework/admin/functions/display.php:906
+#: ../framework/admin/functions/display.php:902
 msgid "Current Tagline"
 msgstr ""
 
-#: ../framework/admin/functions/display.php:908
+#: ../framework/admin/functions/display.php:904
 msgid "You can change your site title by going <a href=\"options-general.php\" target=\"_blank\">here</a>."
 msgstr ""
 
-#: ../framework/admin/functions/display.php:925
+#: ../framework/admin/functions/display.php:921
 msgid "Title"
 msgstr ""
 
-#: ../framework/admin/functions/display.php:927
+#: ../framework/admin/functions/display.php:923
 msgid "Tagline"
 msgstr ""
 
-#: ../framework/admin/functions/display.php:927
+#: ../framework/admin/functions/display.php:923
 msgid "optional"
 msgstr ""
 
-#: ../framework/admin/functions/display.php:929
+#: ../framework/admin/functions/display.php:925
 msgid "Insert your custom text."
 msgstr ""
 
-#: ../framework/admin/functions/display.php:949
-#: ../framework/admin/functions/display.php:975
+#: ../framework/admin/functions/display.php:945
+#: ../framework/admin/functions/display.php:971
 msgid "Standard Image"
 msgstr ""
 
-#: ../framework/admin/functions/display.php:955
-#: ../framework/admin/functions/display.php:981
+#: ../framework/admin/functions/display.php:951
+#: ../framework/admin/functions/display.php:977
 msgid "HiDPI-optimized Image (optional)"
 msgstr ""
 
-#: ../framework/admin/functions/display.php:1076
+#: ../framework/admin/functions/display.php:1072
 msgid "Sidebar Layout"
 msgstr ""
 
-#: ../framework/admin/functions/display.php:1078
+#: ../framework/admin/functions/display.php:1074
 msgid "Default Sidebar Layout"
 msgstr ""
 
-#: ../framework/admin/functions/display.php:1103
+#: ../framework/admin/functions/display.php:1099
 #, php-format
 msgid "In order to use the \"Custom Layout\" template, you must have the %s plugin installed."
 msgstr ""
 
-#: ../framework/admin/functions/display.php:1108
+#: ../framework/admin/functions/display.php:1104
 msgid "Custom Layout"
 msgstr ""
 
-#: ../framework/admin/functions/display.php:1119
+#: ../framework/admin/functions/display.php:1115
 msgid "You haven't created any custom layouts in the Layout builder yet."
 msgstr ""
 
-#: ../framework/admin/functions/display.php:1141
+#: ../framework/admin/functions/display.php:1137
 msgid "Changelog"
 msgstr ""
 
@@ -726,6 +711,63 @@ msgstr ""
 msgid "Something went wrong."
 msgstr ""
 
+#: ../framework/admin/plugins/class-tgm-plugin-activation.php:168
+#: ../framework/admin/plugins/plugins.php:91
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgstr ""
+
+#: ../framework/admin/plugins/class-tgm-plugin-activation.php:169
+#: ../framework/admin/plugins/plugins.php:92
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgstr ""
+
+#: ../framework/admin/plugins/class-tgm-plugin-activation.php:170
+#: ../framework/admin/plugins/plugins.php:93
+#, php-format
+msgid "Sorry, but you do not have the correct permissions to install the %s plugin. Contact the administrator of this site for help on getting the plugin installed."
+msgstr ""
+
+#: ../framework/admin/plugins/class-tgm-plugin-activation.php:171
+#: ../framework/admin/plugins/plugins.php:94
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgstr ""
+
+#: ../framework/admin/plugins/class-tgm-plugin-activation.php:172
+#: ../framework/admin/plugins/plugins.php:95
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgstr ""
+
+#: ../framework/admin/plugins/class-tgm-plugin-activation.php:173
+#: ../framework/admin/plugins/plugins.php:96
+#, php-format
+msgid "Sorry, but you do not have the correct permissions to activate the %s plugin. Contact the administrator of this site for help on getting the plugin activated."
+msgstr ""
+
+#: ../framework/admin/plugins/class-tgm-plugin-activation.php:174
+#: ../framework/admin/plugins/plugins.php:97
+#, php-format
+msgid "The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s."
+msgstr ""
+
+#: ../framework/admin/plugins/class-tgm-plugin-activation.php:175
+#: ../framework/admin/plugins/plugins.php:98
+#, php-format
+msgid "Sorry, but you do not have the correct permissions to update the %s plugin. Contact the administrator of this site for help on getting the plugin updated."
+msgstr ""
+
+#: ../framework/admin/plugins/class-tgm-plugin-activation.php:176
+#: ../framework/admin/plugins/plugins.php:99
+msgid "Begin installing plugin"
+msgstr ""
+
+#: ../framework/admin/plugins/class-tgm-plugin-activation.php:177
+msgid "Begin activating plugin"
+msgstr ""
+
 #: ../framework/admin/plugins/class-tgm-plugin-activation.php:178
 #: ../framework/admin/plugins/plugins.php:101
 msgid "Return to Required Plugins Installer"
@@ -742,6 +784,7 @@ msgid "Plugin activated successfully."
 msgstr ""
 
 #: ../framework/admin/plugins/class-tgm-plugin-activation.php:181
+#: ../framework/admin/plugins/class-tgm-plugin-activation.php:1649
 msgid "The following plugin was activated successfully:"
 msgstr ""
 
@@ -913,6 +956,10 @@ msgstr ""
 
 #: ../framework/admin/plugins/plugins.php:90
 msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: ../framework/admin/plugins/plugins.php:100
+msgid "Activate installed plugin"
 msgstr ""
 
 #: ../framework/admin/plugins/plugins.php:103
@@ -2150,7 +2197,7 @@ msgstr ""
 msgid "Website"
 msgstr ""
 
-#: ../framework/includes/media.php:361
+#: ../framework/includes/media.php:367
 msgid "Oops! Couldn't find a gallery with one or more image attachments. Make sure to insert a gallery into the body of the post or attach some images to the post."
 msgstr ""
 

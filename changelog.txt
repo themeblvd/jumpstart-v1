@@ -1,7 +1,7 @@
 Jump Start Changelog
 ====================
 
-1.2.8.2 - XX/XX/XXXX
+1.2.9 - 12/11/2015
 ------------------
 
 * Fixed: Site Identity section in customizer not showing.
