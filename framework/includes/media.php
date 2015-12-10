@@ -232,8 +232,14 @@ function themeblvd_get_thumbnail_size( $size = '', $location = 'primary', $sideb
  */
 function themeblvd_oembed_result( $input, $url ) {
 
-	// If this is a tweet, keep on movin' fella. @todo Create filterable list of items to skip other than twitter.com
+	// If this is a tweet, keep on movin' fella.
 	if ( strpos( $url, 'twitter.com' ) ) {
+		return $input;
+	}
+
+	// If this is a link to external WP post
+	// (introduced in WP 4.4), abort.
+	if ( strpos( $input, 'wp-embedded-content' ) !== false ) {
 		return $input;
 	}
 

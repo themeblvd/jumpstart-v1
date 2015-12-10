@@ -445,6 +445,11 @@ html {
 	max-width: 100%;
 }
 
+/* WP Post Embed */
+.wp-embedded-content {
+	width: 100%;
+}
+
 /* =WordPress Standard Classes
 -----------------------------------------------*/
 
