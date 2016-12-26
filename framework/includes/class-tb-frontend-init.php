@@ -190,7 +190,7 @@ class Theme_Blvd_Frontend_Init {
 			$layout_name = '';
 
 			// Custom Layout on static page
-			if ( is_page_template( 'template_builder.php' ) ) {
+			if ( is_page_template( 'template_builder.php' ) && ! is_search() && ! is_archive()) { // ! is_search() and ! is_archive() added to fix is_page_template() bug noticed in WordPress 4.7.
 				if ( post_password_required() || ( 'private' == get_post_status() && ! current_user_can( 'edit_posts' ) ) ) {
 
 					// Password is currently required and so
@@ -200,6 +200,7 @@ class Theme_Blvd_Frontend_Init {
 				} else {
 
 					$layout_name = get_post_meta( $this->config['id'], '_tb_custom_layout', true );
+
 					if ( ! $layout_name ) {
 						$layout_name = 'error';
 					}
@@ -210,7 +211,9 @@ class Theme_Blvd_Frontend_Init {
 			// Custom Layout over home "posts page"
 			if ( is_home() && get_option( 'show_on_front' ) == 'posts' ) {
 				if ( 'custom_layout' == themeblvd_get_option( 'homepage_content' ) ) {
+
 					$layout_name = themeblvd_get_option( 'homepage_custom_layout' );
+
 					if ( ! $layout_name ) {
 						$layout_name = 'error';
 					}

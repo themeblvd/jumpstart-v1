@@ -5,6 +5,7 @@ Jump Start Changelog
 --------------------
 
 * Fixed: Duplicate titles on archives, when set to show, in WordPress 4.7.
+* Fixed: Occasional display issues on archives and search results, due to `is_page_template()` bug in WordPress 4.7.
 
 --------------------------------------------------------------
 
