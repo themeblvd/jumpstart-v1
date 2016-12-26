@@ -511,25 +511,34 @@ if ( !function_exists( 'themeblvd_content_top_default' ) ) :
  * @since 2.1.0
  */
 function themeblvd_content_top_default() {
-	if ( is_archive() ) {
-		if ( themeblvd_get_option( 'archive_title', null, 'false' ) != 'false' ) {
+
+	if ( is_archive() || is_search() ) {
+
+		if ( 'false' !== themeblvd_get_option( 'archive_title', null, 'false' ) ) {
+
 			echo '<div class="element element-headline primary-entry-title">';
 			echo '<h1 class="entry-title">';
 			themeblvd_archive_title();
 			echo '</h1>';
 			echo '</div><!-- .element (end) -->';
+
 		}
-	}
-	if ( is_page_template( 'template_list.php' ) || is_page_template( 'template_grid.php' ) ) {
+	} else if ( is_page_template( 'template_list.php' ) || is_page_template( 'template_grid.php' ) ) {
+
 		global $post;
-		if ( 'hide' != get_post_meta( $post->ID, '_tb_title', true ) ) {
+
+		if ( 'hide' !== get_post_meta( $post->ID, '_tb_title', true ) ) {
+
 			echo '<div class="element element-headline primary-entry-title">';
 			echo '<h1 class="entry-title">';
 			the_title();
 			echo '</h1>';
 			echo '</div><!-- .element (end) -->';
+
 		}
+
 		the_content();
+
 	}
 }
 endif;
