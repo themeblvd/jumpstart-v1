@@ -1,7 +1,7 @@
 Jump Start Changelog
 ====================
 
-1.2.12 - XX/XX/2017
+1.2.12 - 04/18/2017
 --------------------
 
 * Updated to FontAwesome 4.7.0.
