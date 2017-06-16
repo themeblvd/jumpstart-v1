@@ -4,6 +4,8 @@ Jump Start Changelog
 1.2.12 - XX/XX/XXXX
 --------------------
 
+* Minor JavaScript improvements and fixes.
+
 1.2.12 - 04/18/2017
 --------------------
 

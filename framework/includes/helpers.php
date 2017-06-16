@@ -606,8 +606,8 @@ if ( !function_exists( 'themeblvd_standard_slider_js' ) ) :
 function themeblvd_standard_slider_js( $id, $options ) {
 	?>
 	<script>
-	jQuery(document).ready(function($) {
-		$(window).load(function() {
+	+function($) {
+		$(window).on('load', function() {
 
 			// Initiate flexslider for this slider.
 			$('#tb-slider-<?php echo $id; ?> .flexslider').flexslider({
@@ -678,8 +678,10 @@ function themeblvd_standard_slider_js( $id, $options ) {
 				<?php endif; ?>
 			<?php endif; ?>
 
+
 		});
-	});
+
+	}(jQuery);
 	</script>
 	<?php
 }

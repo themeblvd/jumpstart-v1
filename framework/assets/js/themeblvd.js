@@ -360,7 +360,7 @@ jQuery(document).ready(function($) {
 		});
 
 		// Carousel thumbnail navigation
-		$('.carousel .carousel-thumb-nav li').click(function(){
+		$('.carousel .carousel-thumb-nav li').on('click', function(){
 			var el = $(this);
 			el.closest('.carousel-thumb-nav').find('li').removeClass('active');
 			el.addClass('active');
@@ -368,12 +368,12 @@ jQuery(document).ready(function($) {
 
 		$('.carousel').on('slid.bs.carousel', function () {
 
-			var el = $(this),
-				data = el.data('bs.carousel'),
-				current = data.getActiveIndex()+1;
+			var $el = $(this),
+				data = $el.data('bs.carousel'),
+				current = data.getItemIndex(data.$element.find('.item.active')) + 1;
 
-			el.find('.carousel-thumb-nav li').removeClass('active');
-			el.find('.carousel-thumb-nav li:nth-child('+current+')').addClass('active');
+			$el.find('.carousel-thumb-nav li').removeClass('active');
+			$el.find('.carousel-thumb-nav li:nth-child('+current+')').addClass('active');
 
 		});
 
