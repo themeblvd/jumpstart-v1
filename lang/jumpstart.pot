@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Jump Start 1.2.9\n"
+"Project-Id-Version: Jump Start 1.2.13\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-10 13:15-1000\n"
-"PO-Revision-Date: 2015-12-10 13:15-1000\n"
+"POT-Creation-Date: 2017-08-02 12:12-0700\n"
+"PO-Revision-Date: 2017-08-02 12:12-0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-KeywordsList: __;_e;_n;_n_noop\n"
+"X-Poedit-KeywordsList: __;_n;_e\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SearchPath-0: ..\n"
 
@@ -711,63 +711,6 @@ msgstr ""
 msgid "Something went wrong."
 msgstr ""
 
-#: ../framework/admin/plugins/class-tgm-plugin-activation.php:168
-#: ../framework/admin/plugins/plugins.php:91
-#, php-format
-msgid "This theme requires the following plugin: %1$s."
-msgstr ""
-
-#: ../framework/admin/plugins/class-tgm-plugin-activation.php:169
-#: ../framework/admin/plugins/plugins.php:92
-#, php-format
-msgid "This theme recommends the following plugin: %1$s."
-msgstr ""
-
-#: ../framework/admin/plugins/class-tgm-plugin-activation.php:170
-#: ../framework/admin/plugins/plugins.php:93
-#, php-format
-msgid "Sorry, but you do not have the correct permissions to install the %s plugin. Contact the administrator of this site for help on getting the plugin installed."
-msgstr ""
-
-#: ../framework/admin/plugins/class-tgm-plugin-activation.php:171
-#: ../framework/admin/plugins/plugins.php:94
-#, php-format
-msgid "The following required plugin is currently inactive: %1$s."
-msgstr ""
-
-#: ../framework/admin/plugins/class-tgm-plugin-activation.php:172
-#: ../framework/admin/plugins/plugins.php:95
-#, php-format
-msgid "The following recommended plugin is currently inactive: %1$s."
-msgstr ""
-
-#: ../framework/admin/plugins/class-tgm-plugin-activation.php:173
-#: ../framework/admin/plugins/plugins.php:96
-#, php-format
-msgid "Sorry, but you do not have the correct permissions to activate the %s plugin. Contact the administrator of this site for help on getting the plugin activated."
-msgstr ""
-
-#: ../framework/admin/plugins/class-tgm-plugin-activation.php:174
-#: ../framework/admin/plugins/plugins.php:97
-#, php-format
-msgid "The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s."
-msgstr ""
-
-#: ../framework/admin/plugins/class-tgm-plugin-activation.php:175
-#: ../framework/admin/plugins/plugins.php:98
-#, php-format
-msgid "Sorry, but you do not have the correct permissions to update the %s plugin. Contact the administrator of this site for help on getting the plugin updated."
-msgstr ""
-
-#: ../framework/admin/plugins/class-tgm-plugin-activation.php:176
-#: ../framework/admin/plugins/plugins.php:99
-msgid "Begin installing plugin"
-msgstr ""
-
-#: ../framework/admin/plugins/class-tgm-plugin-activation.php:177
-msgid "Begin activating plugin"
-msgstr ""
-
 #: ../framework/admin/plugins/class-tgm-plugin-activation.php:178
 #: ../framework/admin/plugins/plugins.php:101
 msgid "Return to Required Plugins Installer"
@@ -956,10 +899,6 @@ msgstr ""
 
 #: ../framework/admin/plugins/plugins.php:90
 msgid "Something went wrong with the plugin API."
-msgstr ""
-
-#: ../framework/admin/plugins/plugins.php:100
-msgid "Activate installed plugin"
 msgstr ""
 
 #: ../framework/admin/plugins/plugins.php:103
