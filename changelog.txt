@@ -1,20 +1,23 @@
 Jump Start Changelog
 ====================
 
-1.2.12 - XX/XX/XXXX
---------------------
+1.2.13 - 08/02/2017
+-------------------
 
-* Minor JavaScript improvements and fixes.
+* Improvement: Minor JavaScript improvements and fixes.
+* Fixed: PHP errors in some server setups with querying categories of post display elements of layout builder.
+
+--------------------------------------------------------------
 
 1.2.12 - 04/18/2017
---------------------
+-------------------
 
 * Updated to FontAwesome 4.7.0.
 
 --------------------------------------------------------------
 
 1.2.11 - 01/18/2017
---------------------
+-------------------
 
 * Fixed: Duplicate titles on archives, when set to show, in WordPress 4.7.
 * Fixed: Occasional display issues on archives and search results, due to `is_page_template()` bug in WordPress 4.7.
@@ -22,7 +25,7 @@ Jump Start Changelog
 --------------------------------------------------------------
 
 1.2.10 - 06/21/2016
---------------------
+-------------------
 
 * Fixed: Minor WPML PHP warnings.
 

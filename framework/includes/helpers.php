@@ -213,20 +213,32 @@ function themeblvd_get_posts_args( $options, $type, $slider = false ) {
 
 				} else if ( ! empty( $options['categories'] ) && ( is_string( $options['categories'] ) || empty( $options['categories']['all'] ) ) ) {
 
-					unset( $options['categories']['all'] );
 					$categories = '';
 
-					foreach ( $options['categories'] as $category => $include ) {
-						if ( $include ) {
-							$current_category = get_term_by( 'slug', $category, 'category' );
-							$categories .= $current_category->term_id.',';
+					if ( is_string( $options['categories'] ) ) {
+
+						$categories = $options['categories'];
+
+					} else {
+
+						if ( isset( $options['categories']['all'] ) ) {
+							unset( $options['categories']['all'] );
 						}
+
+						foreach ( $options['categories'] as $category => $include ) {
+							if ( $include ) {
+								$current_category = get_term_by( 'slug', $category, 'category' );
+								$categories .= $current_category->term_id.',';
+							}
+						}
+
 					}
 
 					if ( $categories ) {
 						$categories = themeblvd_remove_trailing_char( $categories, ',' );
 						$query['cat'] = $categories;
 					}
+
 				}
 
 			}
