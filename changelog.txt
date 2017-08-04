@@ -1,8 +1,10 @@
 Jump Start Changelog
 ====================
 
-1.2.14 - XX/XX/2017
+1.2.14 - 08/04/2017
 -------------------
+
+* Fixed: Problems saving multi-check option types on newer versions of PHP.
 
 --------------------------------------------------------------
 
