@@ -52,3 +52,16 @@ function jumpstart_scripts() {
 
 }
 add_action( 'wp_enqueue_scripts', 'jumpstart_scripts' );
+
+/**
+ * Point to the special changelog for the
+ * Jump Start v1 cycle.
+ *
+ * @since 1.2.15
+ */
+function jumpstart_changelog_link() {
+
+	return 'http://themeblvd.com/changelog/?theme=jumpstart-1';
+
+}
+add_filter( 'themeblvd_changelog_link', 'jumpstart_changelog_link' );

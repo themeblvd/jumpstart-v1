@@ -4,6 +4,8 @@ Jump Start Changelog
 1.2.15 - XX/XX/XXXX
 -------------------
 
+* Fixed: Use correct link to Jump Start v1 cycle changelog in footer of Theme Options.
+
 --------------------------------------------------------------
 
 1.2.14 - 08/04/2017
