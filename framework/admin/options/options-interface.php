@@ -77,7 +77,7 @@ function themeblvd_option_fields( $option_name, $options, $settings, $close = tr
 	   		$output .= '<div class="postbox inner-section'.$class.'">';
 
 	   		if ( $name ) {
-	   			$output .= '<h3>'.$name.'</h3>';
+	   			$output .= '<h3 class="hndle">'.$name.'</h3>';
 	   		}
 
 	   		if ( ! empty($value['desc']) ) {
@@ -194,7 +194,6 @@ function themeblvd_option_fields( $option_name, $options, $settings, $close = tr
 
 			case 'select' :
 
-				$output .= '<div class="tb-fancy-select">';
 				$output .= sprintf( '<select class="of-input" name="%s" id="%s">', esc_attr( $option_name.'['.$value['id'].']' ), esc_attr($value['id']) );
 
 				foreach ( $value['options'] as $key => $option ) {
@@ -202,9 +201,6 @@ function themeblvd_option_fields( $option_name, $options, $settings, $close = tr
 				}
 
 				$output .= '</select>';
-				$output .= '<span class="trigger"></span>';
-				$output .= '<span class="textbox"></span>';
-				$output .= '</div><!-- .tb-fancy-select (end) -->';
 
 				// If this is a builder sample select, show preview images
 				if ( isset( $value['class'] ) && $value['class'] == 'builder_samples' && function_exists( 'themeblvd_builder_sample_previews' ) ) {
@@ -319,7 +315,6 @@ function themeblvd_option_fields( $option_name, $options, $settings, $close = tr
 				// Font Size
 				if ( in_array( 'size', $value['atts'] ) ) {
 
-					$output .= '<div class="tb-fancy-select">';
 					$output .= '<select class="of-typography of-typography-size" name="'.esc_attr( $option_name.'['.$value['id'].'][size]' ).'" id="'.esc_attr( $value['id'].'_size' ).'">';
 
 					$sizes = themeblvd_recognized_font_sizes();
@@ -329,15 +324,12 @@ function themeblvd_option_fields( $option_name, $options, $settings, $close = tr
 					}
 
 					$output .= '</select>';
-					$output .= '<span class="trigger"></span>';
-					$output .= '<span class="textbox"></span>';
-					$output .= '</div><!-- .tb-fancy-select (end) -->';
+
 				}
 
 				// Font Style
 				if ( in_array( 'style', $value['atts'] ) ) {
 
-					$output .= '<div class="tb-fancy-select">';
 					$output .= '<select class="of-typography of-typography-style" name="'.esc_attr( $option_name.'['.$value['id'].'][style]' ).'" id="'.esc_attr( $value['id'].'_style' ).'">';
 
 					$styles = themeblvd_recognized_font_styles();
@@ -346,15 +338,12 @@ function themeblvd_option_fields( $option_name, $options, $settings, $close = tr
 					}
 
 					$output .= '</select>';
-					$output .= '<span class="trigger"></span>';
-					$output .= '<span class="textbox"></span>';
-					$output .= '</div><!-- .tb-fancy-select (end) -->';
+
 				}
 
 				// Font Face
 				if ( in_array( 'face', $value['atts'] ) ) {
 
-					$output .= '<div class="tb-fancy-select">';
 					$output .= '<select class="of-typography of-typography-face" name="'.esc_attr( $option_name.'['.$value['id'].'][face]' ).'" id="'.esc_attr( $value['id'].'_face' ).'">';
 
 					$faces = themeblvd_recognized_font_faces();
@@ -363,9 +352,7 @@ function themeblvd_option_fields( $option_name, $options, $settings, $close = tr
 					}
 
 					$output .= '</select>';
-					$output .= '<span class="trigger"></span>';
-					$output .= '<span class="textbox"></span>';
-					$output .= '</div><!-- .tb-fancy-select (end) -->';
+
 				}
 
 				// Font Color

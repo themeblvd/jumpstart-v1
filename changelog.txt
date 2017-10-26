@@ -5,6 +5,7 @@ Jump Start Changelog
 -------------------
 
 * Fixed: Use correct link to Jump Start v1 cycle changelog in footer of Theme Options.
+* Improvement: Removed "fancy selects" styling on select menus throughout theme's admin UI components; we're now relying on default WordPress admin styling for standard select menus.
 
 --------------------------------------------------------------
 

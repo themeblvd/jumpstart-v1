@@ -173,7 +173,7 @@ class Theme_Blvd_Options_Page {
 		// Display any errors or update messages.
 		settings_errors( $this->id );
 		?>
-		<div class="wrap">
+		<div class="wrap tb-options-page">
 			<div class="admin-module-header">
 				<?php do_action( 'themeblvd_admin_module_header', 'options' ); ?>
 			</div>

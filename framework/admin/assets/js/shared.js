@@ -48,15 +48,14 @@
 			    });
 			    return false;
 			});
-
-			// Fancy Select
-			$this.find('.tb-fancy-select').each(function(){
-				var el = $(this),
-					value = el.find('select').val(),
-					text = el.find('option[value="'+value+'"]').text();
-				el.find('.textbox').text(text);
-			});
     	},
+
+		// Add compatiblity for layout builder, which is meant to
+		// work with newer themes.
+		modal : function()
+		{
+			return;
+		},
 
     	// Setup custom options
     	options : function( type )
@@ -70,12 +69,6 @@
 	    		// time a new options set is inserted.
 	    		if(type == 'setup')
 	    		{
-
-	    			// Fancy Select
-					$this.find('.tb-fancy-select').each(function(){
-						var el = $(this), value = el.find('select').val(), text = el.find('option[value="'+value+'"]').text();
-						el.find('.textbox').text(text);
-					});
 
 	    			// Custom content
 	    			$this.find('.custom-content-types').each(function(){
@@ -208,12 +201,6 @@
 	    		// to be called once on the original page load.
 	    		else if(type == 'bind')
 	    		{
-
-	    			// Fancy Select
-	    			$this.on( 'change', '.tb-fancy-select select', function() {
-		    			var el = $(this), value = el.val(), text = el.find('option[value="'+value+'"]').text();
-						el.closest('.tb-fancy-select').find('.textbox').text(text);
-	    			});
 
 	    			// Custom content
 	    			$this.on( 'change', '.custom-content-types select', function() {
