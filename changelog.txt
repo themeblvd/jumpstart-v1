@@ -1,11 +1,12 @@
 Jump Start Changelog
 ====================
 
-1.2.15 - XX/XX/XXXX
+1.2.15 - 01/18/2018
 -------------------
 
-* Fixed: Use correct link to Jump Start v1 cycle changelog in footer of Theme Options.
+* Added support for Theme Blvd Layout Builder v2.2.
 * Improvement: Removed "fancy selects" styling on select menus throughout theme's admin UI components; we're now relying on default WordPress admin styling for standard select menus.
+* Fixed: Use correct link to Jump Start v1 cycle changelog in footer of Theme Options.
 
 --------------------------------------------------------------
 
