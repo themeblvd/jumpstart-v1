@@ -177,7 +177,6 @@ class Theme_Blvd_Options_Page {
 			<div class="admin-module-header">
 				<?php do_action( 'themeblvd_admin_module_header', 'options' ); ?>
 			</div>
-		    <?php screen_icon( $icon_id ); ?>
 		    <h2<?php if ( $return[1] ) echo ' class="nav-tab-wrapper"' ?>>
 		        <?php if ( $return[1] ) : ?>
 		        	<?php echo $return[1]; ?>

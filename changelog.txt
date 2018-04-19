@@ -1,10 +1,13 @@
 Jump Start Changelog
 ====================
 
-1.2.16 - XX/XX/2018
+1.2.16 - 04/20/2018
 -------------------
 
 * Improvement: Some fixes were added to the framework's Customizer API; this doesn't really effect Jump Start users.
+* Fixed: `screen_icon` notice on theme options page, when `WP_DEBUG` is enabled.
+
+--------------------------------------------------------------
 
 1.2.15 - 01/18/2018
 -------------------
