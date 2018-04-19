@@ -116,7 +116,7 @@ function themeblvd_customizer_init( $wp_customize ) {
 						}
 
 						// Transport
-						$transport = '';
+						$transport = 'refresh';
 						if ( isset( $option['transport'] ) ) {
 							$transport = $option['transport'];
 						}
@@ -203,7 +203,7 @@ function themeblvd_customizer_init( $wp_customize ) {
 						}
 
 						// Transport
-						$transport = '';
+						$transport = 'refresh';
 						if ( isset( $option['transport'] ) ) {
 							$transport = $option['transport'];
 						}
@@ -311,7 +311,7 @@ function themeblvd_customizer_init( $wp_customize ) {
 						}
 
 						// Transport
-						$transport = '';
+						$transport = 'refresh';
 						if ( isset( $option['transport'] ) ) {
 							$transport = $option['transport'];
 						}
